@@ -11,12 +11,14 @@
     <Company />
     <Authors>flier268</Authors>
     <Version>1.0.0.0</Version>
+    <Description>C# library for calling WinRT apis to communicate with Bluetooth LE devices</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.18362.2005" />
-    <PackageReference Include="System.Management" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.19041.1" />
     <PackageReference Include="System.Runtime.InteropServices.WindowsRuntime" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.WindowsRuntime" Version="4.7.0" />
   </ItemGroup>
 
 </Project>
