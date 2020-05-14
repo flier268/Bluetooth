@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bluetooth", "Bluetooth\Bluetooth.csproj", "{F0E2985E-06CD-4542-982B-053F2E9E5D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bluetooth", "Bluetooth\Bluetooth.csproj", "{F0E2985E-06CD-4542-982B-053F2E9E5D78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

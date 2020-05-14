@@ -10,9 +10,8 @@
     <PackageProjectUrl>https://github.com/flier268/Bluetooth</PackageProjectUrl>
     <Company />
     <Authors>flier268</Authors>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.0.2</Version>
     <Description>C# library for calling WinRT apis to communicate with Bluetooth LE devices</Description>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>

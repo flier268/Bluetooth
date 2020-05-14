@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace Bluetooth.GATT
 {
@@ -13,8 +14,13 @@ namespace Bluetooth.GATT
         {
             get
             {
-                var version = Environment.OSVersion;
-                return version.Version.Major >= 10 && version.Version.Build >= 17134;
+                string OSVersion = System.Runtime.InteropServices.RuntimeInformation.OSDescription;
+                //Microsoft Windows 10.0.18363
+                Regex r = new Regex("^Microsoft Windows ([\\d.]+)");
+                var m = r.Match(OSVersion);
+                if (m.Success)
+                    return new Version(m.Groups[1].Value).CompareTo(new Version(10, 0, 17134)) >= 0;
+                return false;
             }
         }
         /// <summary>
